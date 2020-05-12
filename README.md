@@ -22,6 +22,19 @@ Notes:
 
 Stratus will browse your web server and expects to receive XML "verbs" ( i.e. instructions ) and wav files.  Stratus will do things based on these instructions.  This gives you the ability create IVRs that do all sorts of things.
 
+When Stratus requests back to your WebResponder application (inbound or outbound), the URL always contains at least the following parameters:
+
+- NmsAni : caller, e.g., "1001"
+- NmsDnis : callee e.g., "2125551212"
+- AccountUser : Account User
+- AccountDomain : Account Domain
+- AccountLastDial : Last Dialed Digits by the Account User
+- Digits : Received Digits
+- OrigCallID : (1-1188b)
+- TermCallID : (1-1188b)
+- ToUser : User Part input to the Responder
+- ToDomain : Domain Part input to the Responder
+
 # There are three verbs you can give Stratus:
 1. Play
 1. Gather
@@ -67,16 +80,4 @@ For example,
  2125551212
 </Forward>
 ```
-When Stratus requests back to your WebResponder application (inbound or outbound), the URL always contains at least the following parameters:
-
-- NmsAni : caller, e.g., "1001"
-- NmsDnis : callee e.g., "2125551212"
-- AccountUser : Account User
-- AccountDomain : Account Domain
-- AccountLastDial : Last Dialed Digits by the Account User
-- Digits : Received Digits
-- OrigCallID : (1-1188b)
-- TermCallID : (1-1188b)
-- ToUser : User Part input to the Responder
-- ToDomain : Domain Part input to the Responder
 
