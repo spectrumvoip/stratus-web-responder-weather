@@ -1,6 +1,7 @@
 # stratus-weather-ivr
 
 Contact our [Help Desk](https://www.spectrumvoip.com) as we will need to work with you to get calls pointed at your Web responder.  Include the following information
+1. Subject: Web Responder
 1. The web URL of your Responder.
 1. Instructions to route calls to it ( DID, IVR Option, Internal Dial Code ).
 
