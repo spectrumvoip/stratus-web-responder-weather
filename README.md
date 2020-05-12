@@ -22,7 +22,7 @@ Notes:
 
 Stratus will browse your web server and expects to receive XML "verbs" ( i.e. instructions ) and wav files.  Stratus will do things based on these instructions.  This gives you the ability create IVRs that do all sorts of things.
 
-When Stratus requests back to your WebResponder application (inbound or outbound), the URL always contains at least the following parameters:
+When Stratus requests to your WebResponder application (inbound or outbound), the URL always contains at least the following parameters:
 
 - NmsAni : caller, e.g., "1001"
 - NmsDnis : callee e.g., "2125551212"
