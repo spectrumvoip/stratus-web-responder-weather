@@ -3,7 +3,7 @@ require "includes/creds.php";
 session_start();
 header("Content-Type: text/xml");
 
-echo '<?xml version="1.0" encoding="UTF-8" standalone="no" ?>';
+echo '<? xml version="1.0" encoding="UTF-8" standalone="no" ?>';
 
 # Output the Gather element
 function gather($digits,$action,$audio)
