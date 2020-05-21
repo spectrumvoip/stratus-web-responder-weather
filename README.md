@@ -13,12 +13,13 @@ For instance, if someone dials into a DID on our system, we can cause that call 
 
 1. Causes Stratus to play an announcement and wait for a 5 digit US ZIP code.
 1. Queries https://openweathermap.org/ with that ZIP code and gets back the current weather.
-1. Uses Amazon Polly text to speech to create a wav file of the returned data.
-1. Causes Stratus to play that wav file.
+1. Uses Amazon Polly text to speech to create a WAV file of the returned data.
+1. Converts the WAV file to 8khz mono u-law which is required by Stratus.
+1. Causes Stratus to play that WAV file.
 1. Hangs up the call.
 
 Notes:
-* Requires /usr/bin/mpg123 and /usr/bin/sox to convert audio files created by Polly to format compatible with Stratus.
+* Requires /usr/bin/mpg123 and /usr/bin/sox to convert the WAV files created by Polly to 8khz mono u-law which is requried by Stratus.
 * Rename includes/creds.sample.php to includes/creds.php and update it with your keys.
 
 ## How Stratus Web Responders work:
